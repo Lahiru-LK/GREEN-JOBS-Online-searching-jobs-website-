@@ -1,0 +1,300 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection{
+    background:var(--green);
+    color:#fff;
+}
+
+
+:root{
+    --green:#27ae60;
+    --black:#2c2c54;
+    --blue:#42b0bd;
+  }
+  #logo{
+	position: absolute;
+    top: 3.1rem;
+    right:8.5rem;
+
+    width: 9rem;
+    height: auto;
+	
+}
+#kkkk{
+	position: absolute;
+    top: 2rem;
+    right:65rem;
+
+    width: 15rem;
+    height: auto;
+}
+#image04{
+	position: absolute;
+    top: 0.9rem;
+    right:70rem;
+
+    width: 7rem;
+    height: auto;
+}
+#lllll{
+  position: absolute;
+    top: 0.2rem;
+    right:70rem;
+
+    width: 13rem;
+    height: auto;
+
+
+
+}
+#mmmm{
+  position: absolute;
+    top: 1.1rem;
+    right:70rem;
+
+    width: 15rem;
+    height: auto;
+
+}
+#xxxx{
+  position: absolute;
+    top: 1rem;
+    right:65rem;
+
+    width: 15rem;
+    height: auto;
+}
+#zzzz{
+  position: absolute;
+    top: 2.5rem;
+    right:65rem;
+
+    width: 18rem;
+    height: auto;
+}
+#qqqq{
+  position: absolute;
+    top: 2.5rem;
+    right:65rem;
+
+    width: 14rem;
+    height: auto;
+}
+
+
+#dfdf{
+  position: absolute;
+    top: 0.3rem;
+    right:65rem;
+
+    width: 18rem;
+    height: auto;
+
+}
+
+#poo{
+  position: absolute;
+    top: 2.6rem;
+    right:65rem;
+    width: 16rem;
+    height: auto;
+
+}
+
+#klkl{
+  position: absolute;
+    top: 1.9rem;
+    right:65rem;
+    width: 16rem;
+    height: auto;
+
+
+
+}
+
+.llk{
+ 
+    color:var(--green);
+  }
+
+
+h3{
+    
+    font-size: 4.5rem;
+    color:var(--black);
+  } 
+
+  #indeximage{
+    /* The image used */
+    background-image: url("../images/ideximage.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+    /* Add the blur effect */
+    filter: blur(250px);
+    -webkit-filter: blur(415px);
+    z-index: -1;
+
+  }
+
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    
+}
+.container{
+  position: relative;
+  text-align: center;
+  max-width: 1400px;
+  width: 100%;
+  border-radius: 19px;
+  padding: 80px;
+  margin: 0 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  height:120rem;
+  
+}
+
+
+.container2{
+  position: relative;
+  text-align: center;
+  max-width: 1400px;
+  width: 100%;
+  border-radius: 19px;
+  padding: 80px;
+  margin: 0 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  height:180rem;
+  
+}
+
+
+.container3{
+  position: relative;
+  text-align: center;
+  max-width: 1400px;
+  width: 100%;
+  border-radius: 19px;
+  padding: 80px;
+  margin: 0 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  height:95rem;
+  
+}
+
+.container4{
+  position: relative;
+  text-align: center;
+  max-width: 1400px;
+  width: 100%;
+  border-radius: 19px;
+  padding: 80px;
+  margin: 0 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  height:155rem;
+  
+}
+
+.container5{
+  position: relative;
+  text-align: center;
+  max-width: 1400px;
+  width: 100%;
+  border-radius: 19px;
+  padding: 80px;
+  margin: 0 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  height:105rem;
+  
+}
+
+
+
+
+.container:hover {
+    box-shadow: 0 5px 10px rgba(0, 143, 26, 0.4);
+    outline: none;
+    
+    
+}
+
+#description h3{
+  text-align: center;
+}
+#unoderlist {
+  margin-left: 10%;
+}
+
+
+#letter{
+    text-align: left;
+}
+
+h3{
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+/*all font*/
+*{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 4rem;
+    background:var(--green);
+    color:#fff;
+    padding:.2rem 35rem;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius:10px;
+    
+  }
+  .btn:hover{
+    background:var(--black);
+    border-radius:20px;
+  
+  }
+

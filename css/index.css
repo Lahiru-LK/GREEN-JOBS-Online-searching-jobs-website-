@@ -1,0 +1,678 @@
+
+/*The @import rule allows you to import a style sheet into another style sheet*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#2c2c54;
+    --blue:#42b0bd;
+  }
+
+
+/*all font*/
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+  }
+  #bird{
+    position: absolute;
+    width: 30rem;
+    height: auto;
+    margin-left:36rem;
+    margin-top: -15rem;
+  }
+
+  /*root selction color*/
+  *::selection{
+    background:var(--green);
+    color:#fff;
+    
+  }
+
+
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+  }
+/*section control*/
+  section{
+    padding:2rem 7%;
+    
+  }
+
+/*started button*/
+.btnss{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--blue);
+  color:#fff;
+  padding:.5rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius:50px;
+  box-shadow:0 0 1px 0.1px var(--black);
+ 
+  
+  
+}
+
+.btnss:hover{
+  background:var(--green);
+  border-radius:10px;
+  box-shadow:0 0 9px 0px var(--green);
+  outline: none; 
+  transform:scale(1.05) rotate(0deg);
+
+}
+
+
+
+
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--green);
+  color:#fff;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius:10px;
+  
+}
+
+
+.btn:hover{
+  background:var(--black);
+  border-radius:20px;
+
+}
+/*web by catacory style*/
+.heading{
+  text-align: center;
+  color:var(--black);
+  text-transform: uppercase;
+  padding:1rem;
+  font-size: 3.5rem;
+  padding-bottom: 2rem;
+}
+
+/*web by catacory>>> span  style*/
+.heading span{
+  color:var(--green);
+  text-transform: uppercase;
+}
+
+  /*header01 for css*/
+  .header-1{
+    background:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+  }
+
+  /*search box container*/
+  .header-1 .search-box-container{
+    display: flex;
+    height:5rem;
+    width: 100rem;
+   
+  }
+
+  
+
+
+ /*into search box*/
+  .header-1 .search-box-container #search-box{
+    height: 100%;
+    width:100%;
+    padding:1rem;
+    font-size: 2rem;
+    color:#333;
+    border:.1rem solid rgba(0,0,0,.3);
+    text-transform: none;
+
+    
+  }
+ /*seach box highlight*/
+  .header-1 .search-box-container #search-box:focus {
+    box-shadow:0 0 3px 0px var(--green);
+    outline: none; 
+  }
+  
+
+  /*search box label*/
+  .header-1 .search-box-container label{
+    height: 100%;
+    width:8rem;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    color:#fff;
+    background:var(--green);
+    text-align: center;
+    cursor: pointer;
+  }
+
+    /*search box label black*/
+  .header-1 .search-box-container label:hover{
+    background:var(--black);
+  }
+  
+/*header 02 */
+  .header-2{
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+  }
+
+  /*header 02 fixed(lock)*/
+  .header-2.active{
+    position: fixed;
+    top:0; left: 0; right:0;
+    z-index: 10000;
+  }
+
+
+  /*header 02 navigation bar */
+  .header-2 .navbar a{
+    padding:.5rem 1.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color:var(--black);
+  }
+
+
+
+   /*header 02 navigation bar box */ 
+   .header-2 .navbar a:hover{
+    background:var(--green);
+    color:#fff;
+  }
+
+  /*header 02 icon */
+  .header-2 .icons a{
+    font-size: 2.5rem;
+    color:var(--black);
+    padding-left: 1rem;
+  }
+  
+  /*header 02 icon box */ 
+  .header-2 .icons a:hover{
+    color:var(--green);
+  }
+
+  
+/*menu bar colour and others*/
+  #menu-bar{
+    font-size: 3rem;
+    border-radius: .5rem;
+    border:.1rem solid var(--black);
+    padding:.8rem 1.5rem;
+    color:var(--black);
+    cursor: pointer;
+    display: none;
+  }
+/*home section all control*/
+  .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+/*home image posshition*/
+
+  .home .image{
+    flex:1 1 5rem;
+    padding-top: 0rem;
+    padding-left: 2rem;
+   
+  }
+  /*home image size */
+  .home .image img{
+    width:100%;
+  }
+
+  .home .image:hover img{
+    transform:scale(1.01) rotate(0deg);
+  }
+ 
+  /*home content control*/
+ .home .content{
+    flex:1 1 10rem;
+    padding-left: 11rem;
+    padding-top: 5rem;
+
+  }
+
+/*home >>content>>> span tag control*/
+  .home .content span{
+    font-size: 2.5rem;
+    color:#666;
+  }
+
+/*home >>content>>> h2 tag */
+  .home .content h3{
+    font-size: 4.5rem;
+    color:var(--black);
+  }  
+
+  /*banner container css */
+  .banner-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:9.5rem;
+  }
+
+/*container >>>>> banner css*/
+
+.banner-container .banner{
+  flex:1 1 40rem;
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+/*container >>>>> banner>>>>>>>>>>image  css*/
+.banner-container .banner img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+/*container >>>>> banner>>>>>>>>>>content  css*/
+.banner-container .banner .content{
+  position: absolute;
+  top:50%; left: 4%;
+  transform: translateY(-50%);
+}
+
+/*container >>>>> banner>>>>>>>>>>content >>>>h3  css*/
+.banner-container .banner .content h3{
+  font-size: 3rem;
+  color:var(--black);
+}
+
+
+/*container >>>>> banner>>>>>>>>>>content >>>>p  css*/
+.banner-container .banner .content p{
+  font-size: 2rem;
+  color:#333;
+}
+
+/*container >>>>> banner>>>>>>>>>>image tranform  css*/
+.banner-container .banner:hover img{
+  transform:scale(1.2) rotate(-2deg);
+}
+
+/*category  >>> box-container >>> box*/
+.category .box-container{
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
+/*category  >>> box-container >>> box colour*/
+.category .box-container .box{
+  border:.1rem solid rgba(3, 3, 3, 0.3);
+  border-radius: .5rem;
+  text-align: center;
+  padding:2rem;
+  flex:1 1 25rem;
+  border-radius:19px;
+}
+
+
+
+/*category  >>> box-container >>> box image size*/
+.category .box-container .box img{
+  width: 20rem;
+  margin:.5rem 0;
+}
+
+/*category  >>> box-container >>> box image scal */
+.category .box-container .box:hover img{
+  transform:scale(1.2) rotate(0deg);
+}
+
+/*category  >>> box-container >>> box >>> h3 font */
+.category .box-container .box h3{
+  font-size: 3.5rem;
+  color:var(--black);
+}
+
+/*category  >>> box-container >>> box >>> p font */
+.category .box-container .box p{
+  font-size: 2rem;
+  color:#666;
+  padding:.5rem 0;
+}
+/*category  >>> box-container >>> box >>> button */
+.category .box-container .box .btn{
+  display: block;
+
+  
+}
+
+/*company  >>> box-container style */
+.company .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  
+}
+
+/*company  >>> box-container >>>box style */
+.company .box-container .box{
+  flex:1 1 30rem;
+  text-align: center;
+  padding:2rem;
+  border:.1rem solid rgba(0,0,0,.3);
+  border-radius: .5rem;
+  overflow: hidden;
+  position: relative;
+  border-radius:19px;
+}
+
+
+/*company  >>> box-container >>>box >>> image style */
+.company .box-container .box img{
+  height: 20rem;
+}
+
+
+/*company  >>> box-container >>>box >>> qulty style */
+.company .box-container .box .qulity{
+  position: absolute;
+  top:1rem; left: 1rem;
+  background:rgba(0,255,0,.1);
+  color:var(--green);
+  padding:.7rem 1rem;
+  font-size: 2rem;
+  
+}
+
+/*company  >>> box-container >>>box >>> icon style */
+.company .box-container .box .icons{
+  position: absolute;
+  top:.1rem; right:9rem;
+}
+
+/*company  >>> box-container >>>box >>> a >> icon style */
+.company .box-container .box .icons a{
+
+  height:4.0rem;
+  width:4.0rem;
+  line-height: 4.0rem;
+  font-size: 1.7rem;
+  color:var(--black);
+  background:rgba(0,0,0,.05);
+  border-radius: 50%;
+  margin-top: .7rem;
+}
+
+/*company  >>> box-container >>>box >>> a >> icon color */
+.company .box-container .box .icons a:hover{
+  background:var(--green);
+  color:#fff;
+  
+  
+}
+/*company >> box container >> image animated*/
+.company .box-container img:hover {
+  transform:scale(1.1) rotate(0deg);
+}
+
+/*company >> box container >> box>> icon >> a icon animated*/
+.company .box-container .box .icons a:hover {
+  transform:scale(1.5) rotate(0deg);
+}
+
+/*company >> box container >> box>> star icon gold color conveted*/
+.company .box-container .box .stars i{
+  padding:1rem .1rem;
+  font-size: 1.7rem;
+  color:gold;
+}
+
+/*contact us form css*/
+/*out box border*/
+.contact form{
+  text-align: center;
+  padding:2rem;
+  border:.1rem solid rgba(0,0,0,.3);
+  border-radius:19px;
+  
+}
+
+.contact form{
+  box-shadow:0 0 11px -5px var(--black);
+  outline: none; 
+
+}
+
+
+/*inbox box border*/
+.contact form .inputBox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+/*contact >>> inbox> input and text are form color and text */
+.contact form .inputBox input, .contact form textarea{
+  padding:1rem;
+  font-size: 1.7rem;
+  background:#f7f7f7;
+  text-transform: none;
+  margin:1rem 0;
+  border:.1rem solid rgba(0,0,0,.3);
+  width: 49%;
+  border-radius:10px;
+}
+
+.contact form .inputBox :focus {
+  box-shadow:0 0 3px 0px var(--green);
+  outline: none; 
+  border-radius:25px;
+}
+
+.contact form textarea:focus {
+  box-shadow:0 0 3px 0px var(--green);
+  outline: none; 
+  border-radius:25px;
+  
+}
+
+/*masseage text area*/
+.contact form textarea{
+  height: 20rem;
+  resize: none;
+  width: 100%;
+  border-radius:10px;
+}
+
+
+
+.footer .box-container{
+  display: flex;
+  gap:2.0rem;
+  flex-wrap: wrap;
+ 
+  
+}
+
+.footer .box-container .box{
+  padding:1rem -1rem;
+  flex:1 1 25rem;
+  
+}
+
+.footer .box-container .box .share a{
+  padding:0;
+  height:4rem;
+  width:4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  color:var(--black);
+}
+
+.footer .box-container .box p{
+  font-size: 1.3rem;
+  color:#666;
+  padding:.7rem 0;
+}
+
+.footer .box-container .box .links{
+  padding:1rem 0;
+}
+
+.footer .box-container .box .links a{
+  display: block;
+  padding:.5rem 0;
+  font-size: 1.7rem;
+  color:#333;
+}
+
+.footer .box-container .box .links a:hover{
+  text-decoration: underline;
+  color:var(--green);
+}
+
+.footer .credit{
+  padding:2.5rem 1rem;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.footer .credit span{
+  color:var(--green);
+}
+
+
+/*footer style*/
+.header-footer{
+  background:#eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2rem;
+
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  /* media queries mobile phone display optamize  */
+/*
+@media(max-width:1200px){
+
+  html{
+    font-size: 55%;
+  }
+
+}
+
+@media(max-width:991px){
+
+  .header-1,
+  .header-2{
+    padding:2rem;
+
+  }
+
+  section{
+    padding:2rem;
+  }
+
+}
+
+
+@media(max-width:768px){
+
+  #menu-bar{
+    display: initial;
+  }
+
+  .header-2 .navbar{
+    position: absolute;
+    top:100%; left: 0; right:0;
+    background:var(--black);
+    padding:1rem 2rem;
+    display: none;
+  }
+
+  .header-2 .navbar.active{
+    display: initial;
+  }
+
+  .header-2 .navbar a{
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
+    background:#fff;
+    padding:1rem;
+    margin:1.5rem 0;
+  }
+
+  .home .content{
+    text-align: center;
+  }
+
+  .home .content h3{
+    font-size: 4rem;
+  }
+
+}
+
+@media(max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+
+  .heading{
+    font-size: 3rem;
+  }
+  
+  .header-1 .search-box-container{
+    width:100%;
+    margin-top: 2rem;
+  }
+  
+  .logo{
+    font-size: 4rem;
+  }
+
+
+}*/
