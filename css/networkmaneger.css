@@ -367,3 +367,10 @@
     border-radius:20px;
   
   }
+
+  li{
+    text-align: left;
+  }
+  ul{
+    margin-left: 20rem;
+  }
