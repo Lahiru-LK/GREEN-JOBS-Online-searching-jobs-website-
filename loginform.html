@@ -8,9 +8,348 @@
     
     <title>Login</title>
      <!--index css FILE -->
-     <link rel="stylesheet" href="css/Logform.css">
+    <!-- <link rel="stylesheet" href="css/Logform.css">  -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+            :root{
+                --green:#27ae60;
+                --black:#2c2c54;
+                --blue:#42b0bd;
+              }
+            
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'padding',sans-serif;
+            }
+            
+            
+            section{
+                position: relative;
+                width: 100%;
+                height: auto;
+                display: flex;
+            
+            }
+            
+            
+            section .contenBx .formBx{
+                position: absolute;
+                top:3rem;
+                right:35rem;
+                background-color: rgba(235, 235, 235, 0.1);
+                background-color: rgba(255, 255, 255, 0.4);
+                
+            }
+            
+            *::selection{
+                background:var(--green);
+                color:#fff;
+                
+              }
+            
+              #logo{
+                
+                position: absolute;
+                top: 15%;
+                right:39%;
+                
+                width: 10%;
+                height: auto;
+            }
+            
+            
+              #indeximage{
+                /* The image used */
+                background-image: url("./images/home/home.png");
+                background-repeat: no-repeat ;
+                background-size: cover;
+                position: fixed;
+                width: 100%;
+                height: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+               
+                /* Add the blur effect */
+                filter: blur(15px);
+                -webkit-filter: blur(15px);
+                z-index: -1;
+            
+              }
+              
+            
+            
+            section .contenBx .formBx{
+                border:.1rem solid rgba(3, 3, 3, 0.3);
+                border-radius: .5rem;
+                padding:4%;
+                flex:1 1 25rem;
+                border-radius:20px;
+                
+            
+              }
+            
+              section .contenBx .formBx:hover{
+               
+                box-shadow:0 0 9px 0.1px var(--green);
+                
+              }
+            
+            
+              
+              section .contenBx {
+                display: flex;
+                justify-content: center;
+                align-items: center ;
+                width:50%;
+                height: 100%;
+            
+            
+              } 
+            
+              section .contenBx .formBx{
+            
+                    width: 28%;
+            
+              }
+            
+              section .contenBx .formBx h2{
+            
+                color: #607d8b;
+            
+                font-weight: 600;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                margin-bottom: 50px;
+                border-bottom: 4px solid #02c312;
+                display: inline-block;
+                letter-spacing: 1px;
+            }
+            
+            
+            
+            
+            section .contenBx .formBx .inputBx{
+            
+                margin-bottom: 20px; 
+              
+                
+            }
+            
+            section .contenBx .formBx .inputBx  .eye{
+            
+                position: absolute;
+                margin-left: 60%;
+                margin-top: -2.0rem;
+                color: #607d8b;
+            }
+            
+            #hide1{
+            
+                display: none;    
+            }
+            
+            #hide2{
+            
+                
+            }
+            
+            
+            
+            
+            
+            
+            
+            section .contenBx .formBx .inputBx span{
+            
+                font-size: 16px;
+                margin-bottom: 5px;
+                display: inline-block;
+                color: #607d8b;
+                font-weight: 300;
+                font-size: 16px;
+                letter-spacing: 1px;
+            
+            }
+            
+            section .contenBx .formBx .inputBx input{
+            
+                width: 100%;
+                padding: 15px 20px;
+                outline: none;
+                font-weight: 400;
+                border: 1px solid #c7c7c7;
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: var(--green);
+                background: white;
+                border-radius: 30px;
+                
+               
+            }
+            
+            section .contenBx .formBx .inputBx input:placeholder-shown{
+            
+                color: #8a8a8a;
+                font-weight: 500;
+            
+                
+            }
+            
+            
+            
+            
+            
+            section .contenBx .formBx .inputBx input:hover{
+            
+                box-shadow:0 0 5px 0px var(--green);
+                
+               
+            }
+            
+            
+            
+            section .contenBx .formBx .inputBx input[type="button"]{
+            
+            
+                background:var(--blue);
+                color: #ffff;
+                outline: none;
+                border: none;
+                font-weight: 500;
+                cursor: pointer;
+             
+                box-shadow:0 0 3px 0.1px var(--black);
+            }
+            
+            section .contenBx .formBx .inputBx input[type="button"]:hover{
+            
+            
+                background:  var(--green) ;
+                
+               
+              
+            }
+            
+            
+            section .contenBx .formBx .remember{
+            
+               margin-bottom: 10px;
+               color: #607d8b;
+               font-weight: 400;
+               font-size: 14px; 
+            
+            
+            }
+            
+            section .contenBx .formBx .inputBx p{
+            
+                color: #607d8b;
+                
+                
+             }
+            
+             
+            section .contenBx .formBx .inputBx p a{
+            
+                color: #02c312;
+                
+             }
+            
+             section .contenBx .formBx .inputBx p a:hover{
+            
+                color: #079813;
+             }
+            
+             section .contenBx .formBx  h3{
+            
+                color: #607d8b;
+                text-align: center;
+                margin: 40px 0 10px;
+                font-weight: 500;
+            
+             }
+            
+             section .contenBx .formBx .sci{
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+            
+             section .contenBx .formBx .sci li{
+                list-style: none;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: var(--green);
+                border-radius: 100%;
+                margin: 0 7px;
+                cursor: pointer;
+                box-shadow:0 0 5px 0.1px var(--black);
+            }
+            
+            section .contenBx .formBx .sci li:hover{
+               background: var(--black);
+               transform:scale(1.5) rotate(0deg);
+            }
+            
+            section .contenBx .formBx .sci li img{
+                transform: scale(0.7);
+                margin-top: 10%;
+                margin-left: 1%;
+                filter: invert(1) ;
+                
+             }
+            
+            
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
 <body>
@@ -29,12 +368,12 @@
                     
                         <div class="inputBx" >
                             <span>Username</span>
-                            <input type="text" name=""  placeholder="Lahiru123">   
+                            <input type="text" name=""  placeholder="Lahiru123" id="fname">   
                         </div>
 
                         <div class="inputBx" >
                             <span>Password</span>  
-                            <input type="password" name="" placeholder="LK@lahi123" id="myInput" >
+                            <input type="password" name="" placeholder="LK@lahi123" id="fpass" >
                             
                             <div class="eye" onclick="myFunction()">
                                 <i id="hide1" class="fa fa-eye"></i>
@@ -48,12 +387,12 @@
                         </div>
 
                         <div class="inputBx">
-                            <a href="#"><input type="button" value="Sign in" name="" onclick="popUp()" > </a>
+                            <a href="#"><input type="button" value="Sign in" name="" onclick="checkEmpty()" > </a>
                               
                         </div>
 
                         <div class="inputBx">
-                           <p>Don't have an account? <a href="/creataccount.html">Sign up</a>  </p>
+                           <p>Don't have an account? <a href="./creataccount.html">Sign up</a>  </p>
                            
                         </div>
                         

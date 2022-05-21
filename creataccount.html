@@ -7,13 +7,312 @@
     <title>Creat_Account</title>
     <link rel="icon" type="image/icon" href="./images/favicon/Green_JOB.png">     <!--facvicon-->
 
-    <link rel="stylesheet" href="css/creataccount.css">
+   <!-- <link rel="stylesheet" href="css/creataccount.css">  -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+
+     <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+:root{
+    --green:#27ae60;
+    --black:#2c2c54;
+    --blue:#42b0bd;
+  }
+
+
+
+* {
+	box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+
+    
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 45rem;
+	margin: 0;
+}
+
+*::selection{
+    background:var(--green);
+    color:#fff;
+}
+
+#logo{
+	
+	position: fixed;
+	top: 10%;
+	right:38%;
+	
+	width: 10%;
+	height: auto;
+}
+
+
+#indeximage{
+    /* The image used */
+    background-image: url("./images/home/home.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+    /* Add the blur effect */
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    z-index: -1;
+
+  }
+
+
+.container {
+	background-color: rgba(226, 226, 226, 0.3);
+	border-radius: 18px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+    padding-top: 2%;
+    padding-bottom: 0.1%;
+    margin-top: 1%;
+    
+}
+
+
+
+.container:hover{
+box-shadow:0 0 9px 0px var(--green);
+outline: none; 
+
+}
+
+
+
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 10px 40px;
+    
+}
+
+.header h2 {
+	margin: 10;
+    color:#607d8b;
+	display: inline-block;
+	border-bottom: 4px solid #02c312;
+	font-size: 1.5rem;
+	
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+    color: #607d8b;
+	
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 20px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+	color: var(--green);
+	font-weight: 800;
+
+    
+}
+/*	dsgadgdgadgdagdasfgdagfgsdgsgg			*/
+
+
+
+.form-control :placeholder-shown{
+
+	color: #8a8a8a;
+	font-weight: 500;
+
+    
+}
+
+.form-control input:hover {
+    box-shadow:0 0 3px 0px var(--blue);
+    outline: none; 
+}
+
+.form-control input:focus {
+	outline: 0;
+	box-shadow:0 0 3px 0px var(--green);
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+/*.................................................*/
+#hide1{
+    display: none;
+}
+
+#hide2{
+   
+}
+
+#hide1-1{
+    display: none;
+}
+
+#hide2-2{
+   
+}
+
+
+
+/*.container .form.form-control */#eye {
+
+    position:absolute;
+    margin-left: 79%;
+    margin-top: -1.9rem;
+	color: #607d8b;
+   
+}
+
+/*.................................................*/
+
+
+.form-control .im {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+    color: #e74c3c;
+}
+
+
+
+
+
+
+
+
+
+.backBtn p{
+    background:var(--blue);
+    color: #ffff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow:0 0 3px 0.1px var(--black);
+	text-align: center;
+    border-radius: 20px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+
+}
+
+.backBtn p:hover{
+
+
+    background:  var(--green) ;
+
+   
+  
+}
+
+
+p{
+
+    color: #607d8b;
+    
+    
+ }
+
+ 
+ 
+.inputBx a{
+
+    color: #048611;
+    
+ }
+
+.inputBx a:hover{
+
+    color: #00b12f;
+ }
+
+
+
+
+
+     </style>
      
 
 </head>

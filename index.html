@@ -14,6 +14,8 @@
             <!--icon for link-->
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
              
             <!--job title-->
             <title>Green JOBS</title>           
@@ -366,27 +368,31 @@
             <form action="" name="countactUS">
         
                 <div class="inputBox">
-                    <input type="text"   placeholder="Enter your name">
-                    <input type="email"   placeholder="Enter your email">
+                    <input type="text" id="fname" placeholder="First Name" class="flname" onblur="checkLetterf()" required>
+                    <input type="email" id="femail" placeholder="Enter your email"  required>
 
                 </div>
         
                 <div class="inputBox" >
-                    <input type="number" name="Number" placeholder="Enter your mobile number">
-                    <input type="text" name="Subject" placeholder="Enter your subject">
+                    <input type="number" id="fnum" placeholder="Enter your mobile number"  required> 
+                    <input type="text" id="fsub" placeholder="Enter your subject"  required>
                 </div>
               
-                <textarea placeholder="Enter your Message"  id="" cols="30" rows="10"></textarea>
+                <textarea placeholder="Enter your Message"  id="" cols="30" rows="10" id="fmsg" required></textarea>
         
-                <input type="submit" value="send message" class="btn" onclick="checkingForm()">
+                <input type="button" value="send message" class="btn" onclick="checkEmpty();">
                 <input type="reset" value="reset value" class="btn">
         
             </form>
+
+
+            <script>
+                
+
+                
+            </script>
         
         </section><br><br><br><br><br><br>
-
-
-
 
 
 <!--Footer  website last-->
@@ -469,6 +475,7 @@
             <!--script1 js file-->
             <script src="javas/script1.js"></script> <!--menu bar lock by scripr function-->
             <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+            <script src="./javas/indexForm.js"></script>
            
         </body>
     </html>
