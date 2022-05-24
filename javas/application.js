@@ -114,7 +114,7 @@ Array.prototype.forEach.call(
     else if(zip == null || zip == ""){
       alert("Fill the postal/zip code Field!");
     }
-    else{
+    else {
       Swal.fire({
         icon: "success",
         title: "Successfully!",
